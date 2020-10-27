@@ -1,0 +1,110 @@
+@import url(//db.onlinewebfonts.com/c/3b114d63b02026b0c7077f0e55a95dda?family=Avenir+Next+Rounded+Pro);
+
+@font-face {
+    font-family: "Avenir Next Rounded Pro"; 
+    src: url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.eot"); 
+    src: url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.woff") format("woff"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.svg#Avenir Next Rounded Pro") format("svg"); 
+  }
+  
+body {
+    margin: 0;
+    font-family: "Avenir Next Rounded",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+}
+
+.banner {
+    font-size: 11px;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: min-content;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.logo-section {
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 10%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    padding: 0 25px 0 25px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: #aae2f8;
+}
+.drop-down {
+    overflow: hidden;
+}
+
+.drop-down:hover .drop-items {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4e0ea;
+    color: white;
+    padding: 8px 5px 5px 5px;
+    border: 1px solid black;
+    border-top: none;
+
+}
+
+.drop-items {
+    display: none;
+    position: absolute;
+}
+
+.hero {
+    background-image: url("../assets/heroBackground.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    margin-top: -21px;
+    width: 100%;
+}
+
+.hero-text {
+    position: relative;
+    top: 100px;
+}
+
+.hero-text h1 {
+    margin-bottom: 50px;
+}
+
+.hero-CTA {
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 20px 30px 20px 30px;
+}
+
+.hero-CTA:hover {
+    background-color: white;
+    color: black;
+}
