@@ -1,11 +1,11 @@
 @import url(//db.onlinewebfonts.com/c/3b114d63b02026b0c7077f0e55a95dda?family=Avenir+Next+Rounded+Pro);
 
 @font-face {
-    font-family: "Avenir Next Rounded Pro"; 
-    src: url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.eot"); 
-    src: url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.woff") format("woff"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.svg#Avenir Next Rounded Pro") format("svg"); 
-  }
-  
+    font-family: "Avenir Next Rounded Pro";
+    src: url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.eot");
+    src: url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.woff") format("woff"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.svg#Avenir Next Rounded Pro") format("svg");
+}
+
 body {
     margin: 0;
     font-family: "Avenir Next Rounded",sans-serif;
@@ -45,33 +45,33 @@ nav {
     justify-content: center;
 }
 
-nav a {
-    padding: 0 25px 0 25px;
-    text-decoration: none;
-    color: black;
-}
+    nav a {
+        padding: 0 25px 0 25px;
+        text-decoration: none;
+        color: black;
+    }
 
-nav a:visited {
-    color: black;
-}
+        nav a:visited {
+            color: black;
+        }
 
-nav a:hover {
-    color: #aae2f8;
-}
+        nav a:hover {
+            color: #aae2f8;
+        }
+
 .drop-down {
     overflow: hidden;
 }
 
-.drop-down:hover .drop-items {
-    display: flex;
-    flex-direction: column;
-    background-color: #f4e0ea;
-    color: white;
-    padding: 8px 5px 5px 5px;
-    border: 1px solid black;
-    border-top: none;
-
-}
+    .drop-down:hover .drop-items {
+        display: flex;
+        flex-direction: column;
+        background-color: #f4e0ea;
+        color: white;
+        padding: 8px 5px 5px 5px;
+        border: 1px solid black;
+        border-top: none;
+    }
 
 .drop-items {
     display: none;
@@ -93,9 +93,9 @@ nav a:hover {
     top: 100px;
 }
 
-.hero-text h1 {
-    margin-bottom: 50px;
-}
+    .hero-text h1 {
+        margin-bottom: 50px;
+    }
 
 .hero-CTA {
     text-decoration: none;
@@ -104,7 +104,55 @@ nav a:hover {
     padding: 20px 30px 20px 30px;
 }
 
-.hero-CTA:hover {
-    background-color: white;
-    color: black;
+    .hero-CTA:hover {
+        background-color: white;
+        color: black;
+    }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.product-card {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80vh 100px;
+}
+
+    .product-card img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+.product-description {
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.price {
+    color: darkgray;
+}
+
+.animal-grid {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.animal-header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.animal-grid img {
+    margin-top: 3px;
+    width: 25%;
+    flex: 0 1 25%;
 }
