@@ -6,11 +6,13 @@
     src: url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.woff") format("woff"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3b114d63b02026b0c7077f0e55a95dda.svg#Avenir Next Rounded Pro") format("svg");
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: "Avenir Next Rounded",sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: "Avenir Next Rounded",sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 img {
@@ -33,6 +35,7 @@ img {
     text-align: center;
     padding: 15px;
     margin-top: 50px;
+    position: relative;
 }
 
 .logo {
@@ -43,6 +46,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
 }
 
     nav a {
@@ -76,6 +80,17 @@ nav {
 .drop-items {
     display: none;
     position: absolute;
+    z-index: 3;
+}
+
+.drop-items a {
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.drop-items a:visited {
+    color: white;
 }
 
 .hero {
@@ -133,6 +148,7 @@ nav {
     border-top: 1px solid black;
     text-align: center;
     padding: 10px 0 10px 0;
+    background-color: white;
 }
 
 .price {
@@ -155,4 +171,250 @@ nav {
     margin-top: 3px;
     width: 25%;
     flex: 0 1 25%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 0 50px 0 50px;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+}
+
+.subfooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.subfooter h6 {
+    padding: 20px;
+}
+
+.twin {
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 50px;
+}
+
+.twin h5 {
+    padding-bottom: 25px;
+    border-bottom: 1px solid gray;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    color: gray;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.prev {
+    top: 50%;
+}
+
+.next {
+    top: 50%;
+    right: 0;
+}
+
+.product-slider {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60%;
+    max-height: fit-content;
+    margin-bottom: -300px;
+}
+
+.grid img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid .prev, .grid .next {
+    top: 25%;
+}
+
+.slider-box {
+    position: absolute;
+    padding: 40px;
+    bottom: 10%;
+    right: 10%;
+    background: white;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.slider-box h5 {
+    font-size: 56px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    line-height: 1.1;
+}
+
+.slider-box p {
+    border: 1px solid black;
+    padding: 15px;
+    width: 26%;
+    text-align: end;
+}
+
+.pink {
+    background-color:#f4e0ea;
+    padding: 100px;
+}
+
+.pink h2 {
+    font-size: 96px;
+}
+
+.pink h3 {
+    line-height: 2em;
+}
+
+.pink img {
+    width: 25%;
+}
+
+.blue {
+    background-color: #aae2f8;
+    padding: 50px;
+}
+
+.blue h5{
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+}
+
+.logo-container img {
+    width: auto;
+    height: 80px;
+}
+
+.small {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 40%;
+    margin:0 auto;
+    border: 1px solid black;
+}
+
+.collections-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-collection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 600px;
+    max-height: fit-content;
+}
+
+.product-collection img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    justify-content: center;
+}
+
+.side-banner {
+    background-color: #f4e0ea;
+    padding: 25% 10%;
+}
+
+.side-banner h3 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.collections-button {
+    border: 1px solid black;
+    padding: 15px 20px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+.collections-header {
+    text-align: center;
+    margin: 25px;
+}
+
+.logo-text h5 {
+    margin: 0;
+    margin-top: -40px;;
+}
+
+.instagram img {
+    width: 20px;
+    height: auto;
+}
+
+.input {
+    width: 100%;
+    height: 35px;
+    display: flex;
+}
+
+input {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    width: 90%;
+}
+
+button.join {
+    width: 10%;
+    margin-left: -3px;
+}
+
+.icon-text-combo {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-text-combo img {
+    width: 15px;
+    height: auto;
+    padding-right: 10px;
+}
+
+.side-icons img {
+    width: 25px;
+    height: auto;
+    padding: 7px;
+}
+
+.side-icons {
+    position: absolute;
+    right: 10px;
+    bottom: 25%;
+}
+
+.sale {
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
 }
